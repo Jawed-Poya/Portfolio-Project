@@ -44,9 +44,16 @@
 }
 .bg-green, .bg-white {
     width: 170px !important;
-    height: 170px !important; 
+    height: 175px !important; 
     padding: 10px 20px;
     font-size: small;
+}
+.bg-green h4, .bg-white h4 { 
+    margin: 10px 0;
+}
+.bg-green p, .bg-white p {
+    line-height: 20px;
+
 }
 .bg-green {
     background-color: var(--color-green) !important;
@@ -57,6 +64,9 @@
 }
 .bg-white {
     background-color: var(--color-white) !important;
+}
+.fs-small {
+    font-size: 11px;
 }
 .container {
     width: 1024px;
@@ -71,18 +81,20 @@
     font-family: sans-serif;
     background-color: var(--color-gray);
 }
-.language, .intro, .education, .interest {
+.language, .intro, .education, .interest, .contact {
     padding: 20px;
 }
 .language {
     width: 400px;
 }  
-.education, .interest {
+.education, .interest, .contact {
     width: 416px;
-    height: 450px;
+}
+.education {
+    height: 460px;
 }
 .interest {
-    height: 250px;
+    height: 280px;
 }
 .porfile img {
     width: 100%;
@@ -131,4 +143,19 @@
     border-radius: 15px;
     background-color: var(--color-white);
     text-transform: lowercase;
-} 
+}
+.contact {
+    height: 150px;
+    margin-top: 25px;
+    background-color: var(--color-dark);
+    color: var(--color-gray);
+}
+.contact h3 {
+    font-size: 22px;
+    margin: 5px 0 30px 0;
+    letter-spacing: 2px;
+}
+.contact hr {
+    height: 22px;
+    margin-top: 0px;
+}
