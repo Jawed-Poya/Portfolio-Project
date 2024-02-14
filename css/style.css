@@ -33,8 +33,14 @@
 .justify-between {
     justify-content: space-between;
 }
+.flex-column {
+    flex-direction: column;
+}
 .flex-wrap {
     flex-wrap: wrap;
+}
+.align-center {
+    align-items: center;
 }
 .mt-50 {
     margin-top: 50px;
@@ -59,6 +65,9 @@
     background-color: var(--color-green) !important;
     color: var(--color-gray);
 }
+.bg-dark {
+    background-color: var(--color-dark) !important;
+}
 .bg-green h4 i {
     font-size: large;
 }
@@ -81,7 +90,7 @@
     font-family: sans-serif;
     background-color: var(--color-gray);
 }
-.language, .intro, .education, .interest, .contact {
+.language, .intro, .education, .interest, .contact, .tools {
     padding: 20px;
 }
 .language {
@@ -115,7 +124,7 @@
 .intro span:last-child {
     color: var(--color-gray-500);
 }
-.language h3, .education h3, .interest h3 { 
+.language h3, .education h3, .interest h3, .tools h3, .experience h3 { 
     margin: 0;
     margin-bottom: 25px;
 }
@@ -158,4 +167,37 @@
 .contact hr {
     height: 22px;
     margin-top: 0px;
+}
+.tools, .experience  {
+    height: 600px; 
+}
+.badge-card {
+    width: 70% !important;
+    position: relative;
+    overflow: visible;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+.badge-card:first-child {
+    height: 120px !important;
+}
+.badge-card .badge {
+    position: absolute;
+    color: var(--color-white);
+    top: -15px;
+    left: 13%;
+    font-size: x-small;
+} 
+.badge-card img {
+    width: 32px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+.experience {
+    width: 630px;
+}
+ 
+.experience h3 {
+    margin: 20px 0 0 20px;
 }
